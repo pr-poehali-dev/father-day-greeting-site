@@ -11,13 +11,12 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat print:hidden"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url(https://cdn.poehali.dev/files/db139a82-fae5-4c68-9986-ba9f88505647.jpeg)',
-          opacity: 0.4
+          backgroundImage: 'url(https://cdn.poehali.dev/files/db139a82-fae5-4c68-9986-ba9f88505647.jpeg)'
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FEF7CD]/70 via-[#FDE1D3]/70 to-[#F2FCE2]/70" />
+      <div className="absolute inset-0 bg-black/20" />
       <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
         <div className="text-right mb-6 print:hidden">
@@ -29,17 +28,17 @@ const Index = () => {
         
         <section className="text-center mb-16 animate-fade-in">
           <div className="mb-6">
-            <Icon name="Heart" size={64} className="mx-auto text-[#F97316] mb-4" />
+            <Icon name="Heart" size={64} className="mx-auto text-white drop-shadow-lg mb-4" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-4">
             Любимый папочка! 💞
           </h1>
-          <p className="text-xl md:text-2xl text-foreground font-medium">
+          <p className="text-xl md:text-2xl text-white drop-shadow-md font-medium">
             Поздравляем тебя с Днем отца!
           </p>
         </section>
 
-        <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-scale-in">
+        <div className="mb-12 p-8 md:p-12 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl animate-scale-in border border-white/30 print:bg-white print:border-gray-200">
           <div className="flex items-center gap-3 mb-6">
             <Icon name="Mail" size={32} className="text-[#F97316]" />
             <h2 className="text-3xl font-bold text-primary">Письмо</h2>
@@ -70,18 +69,18 @@ const Index = () => {
               Люблю тебя, папочка! Агу-агу! 👶💕
             </p>
           </div>
-        </Card>
+        </div>
 
-        <Separator className="my-12" />
+        <Separator className="my-12 print:hidden" />
 
         <div className="text-center animate-scale-in">
           <div className="mb-6">
-            <Icon name="Heart" size={48} className="mx-auto text-[#F97316]" />
+            <Icon name="Heart" size={48} className="mx-auto text-white drop-shadow-lg" />
           </div>
-          <p className="text-2xl font-bold text-primary mb-2">
+          <p className="text-2xl font-bold text-white drop-shadow-lg mb-2">
             С любовью и благодарностью
           </p>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white drop-shadow-md">
             Твоя семья
           </p>
         </div>
