@@ -9,8 +9,16 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FEF7CD] via-[#FDE1D3] to-[#F2FCE2]">
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="min-h-screen relative">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat print:hidden"
+        style={{ 
+          backgroundImage: 'url(https://cdn.poehali.dev/files/db139a82-fae5-4c68-9986-ba9f88505647.jpeg)',
+          opacity: 0.15
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FEF7CD]/90 via-[#FDE1D3]/90 to-[#F2FCE2]/90" />
+      <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
         <div className="text-right mb-6 print:hidden">
           <Button onClick={handlePrint} className="bg-[#F97316] hover:bg-[#EA6C0C]">
