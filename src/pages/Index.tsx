@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 
 const Index = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showMusicPrompt, setShowMusicPrompt] = useState(true);
   const [audio] = useState(() => new Audio('https://www.bensound.com/bensound-music/bensound-tenderness.mp3'));
 
   useEffect(() => {
@@ -25,12 +26,52 @@ const Index = () => {
     setIsPlaying(!isPlaying);
   };
 
+  const startMusic = () => {
+    audio.play();
+    setIsPlaying(true);
+    setShowMusicPrompt(false);
+  };
+
   const handlePrint = () => {
     window.print();
   };
 
   return (
     <div className="min-h-screen relative bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+      {showMusicPrompt && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in">
+          <div className="bg-white rounded-3xl p-8 md:p-12 max-w-md mx-4 text-center shadow-2xl border-4 border-pink-300 relative">
+            <div className="absolute -top-6 -left-6 text-5xl animate-bounce">🎵</div>
+            <div className="absolute -top-6 -right-6 text-5xl animate-bounce delay-100">💕</div>
+            <div className="mb-6">
+              <Icon name="Music" size={64} className="mx-auto text-pink-500 mb-4" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Включить музыку?
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Нежная мелодия создаст особую атмосферу для чтения письма 💝
+            </p>
+            <div className="space-y-3">
+              <Button 
+                onClick={startMusic} 
+                className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white text-lg py-6"
+              >
+                <Icon name="Play" size={24} className="mr-2" />
+                Да, включить музыку! 🎶
+              </Button>
+              <Button 
+                onClick={() => setShowMusicPrompt(false)} 
+                variant="outline"
+                className="w-full border-2 border-gray-300 hover:bg-gray-100"
+              >
+                Нет, спасибо
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+      
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-10 left-10 text-6xl">💕</div>
         <div className="absolute top-32 right-20 text-5xl">⭐</div>
