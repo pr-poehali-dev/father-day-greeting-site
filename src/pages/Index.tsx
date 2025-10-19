@@ -11,12 +11,9 @@ const Index = () => {
           <div className="mb-6">
             <Icon name="Heart" size={64} className="mx-auto text-[#F97316] mb-4" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Любимый наш муж и отец ❤️
-          </h1>
-          <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Любимый папочка! 💞
-          </h2>
+          </h1>
           <p className="text-xl md:text-2xl text-foreground font-medium">
             Поздравляем тебя с Днем отца!
           </p>
