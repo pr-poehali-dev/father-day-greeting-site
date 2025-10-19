@@ -1,11 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#FEF7CD] via-[#FDE1D3] to-[#F2FCE2]">
       <div className="container mx-auto px-4 py-12 max-w-4xl">
+        
+        <div className="text-right mb-6 print:hidden">
+          <Button onClick={handlePrint} className="bg-[#F97316] hover:bg-[#EA6C0C]">
+            <Icon name="Printer" size={20} className="mr-2" />
+            Распечатать письмо
+          </Button>
+        </div>
         
         <section className="text-center mb-16 animate-fade-in">
           <div className="mb-6">
@@ -65,6 +77,8 @@ const Index = () => {
             Твоя семья
           </p>
         </div>
+
+
       </div>
     </div>
   );
