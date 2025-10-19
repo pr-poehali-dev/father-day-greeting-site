@@ -131,22 +131,48 @@ const Index = () => {
               Я помню твой голос, когда ты разговаривал со мной через мамин животик. Помню, как ты гладил меня, и я так радовался, что кувыркался! Мама говорила, что ей было больно, но она всегда смеялась.
             </p>
             
-            <div className="my-6 rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src="https://cdn.poehali.dev/files/43d801f4-de89-4be4-b918-b9ecb7f39e5e.jpeg" 
-                alt="Семейное фото" 
-                className="w-full h-auto"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/5b761712-c440-4b4b-b2d4-27ce3974bebb.jpeg" 
+                  alt="Мама ждёт малыша" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/43d801f4-de89-4be4-b918-b9ecb7f39e5e.jpeg" 
+                  alt="Семейное фото" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
 
             <p>
               Папа, когда я родился, ты взял меня на ручки, и я сразу понял — ты мой самый родной человек! Твои большие и сильные руки держали меня так бережно, как будто я самое дорогое на свете.
             </p>
             
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/e923910f-b9e9-477e-a04f-609e99d6364c.jpeg" 
+                  alt="Первые часы жизни с мамой" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/151f29f9-f26a-4bcb-88fd-ff363eca2967.jpeg" 
+                  alt="Первая встреча с папой" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            
             <div className="my-6 rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
               <img 
-                src="https://cdn.poehali.dev/files/151f29f9-f26a-4bcb-88fd-ff363eca2967.jpeg" 
-                alt="Первая встреча с папой" 
+                src="https://cdn.poehali.dev/files/6d17acd5-3f2a-4e13-a286-d4e252b1bfb8.jpeg" 
+                alt="Наша счастливая семья" 
                 className="w-full h-auto"
               />
             </div>
@@ -154,10 +180,27 @@ const Index = () => {
               Сейчас мне 10 месяцев, и каждый день я вижу, как ты заботишься о нас с мамой. Когда ты приходишь с работы уставший, но все равно играешь со мной — это самое счастливое время!
             </p>
             
-            <div className="my-6 rounded-xl overflow-hidden shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/182d9c12-ab3f-49d9-afd1-5bcba095e35d.jpeg" 
+                  alt="Малыш-повар" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/21faffe9-a09f-4a94-aba4-d2c92244303d.jpeg" 
+                  alt="Счастливый малыш" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            
+            <div className="my-6 rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
               <img 
-                src="https://cdn.poehali.dev/files/182d9c12-ab3f-49d9-afd1-5bcba095e35d.jpeg" 
-                alt="Малыш-повар" 
+                src="https://cdn.poehali.dev/files/89ccccd1-b01f-4be7-8668-f9ff00cbad67.jpeg" 
+                alt="Нежность и забота" 
                 className="w-full h-auto"
               />
             </div>
