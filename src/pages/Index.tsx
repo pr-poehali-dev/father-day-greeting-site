@@ -120,6 +120,15 @@ const Index = () => {
             <Icon name="Mail" size={32} className="text-[#F97316]" />
             <h2 className="text-3xl font-bold text-primary">Письмо</h2>
           </div>
+          
+          <div className="mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-300">
+            <img 
+              src="https://cdn.poehali.dev/files/3ce55d4f-1d54-4668-8969-ff29018c89ae.jpeg" 
+              alt="Наша счастливая семья на природе" 
+              className="w-full h-auto"
+            />
+          </div>
+          
           <div className="space-y-6 text-lg leading-relaxed">
             <p className="text-2xl font-semibold">
               Папочка!
