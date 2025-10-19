@@ -9,14 +9,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen relative">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url(https://cdn.poehali.dev/files/db139a82-fae5-4c68-9986-ba9f88505647.jpeg)'
-        }}
-      />
-      <div className="absolute inset-0 bg-black/20" />
+    <div className="min-h-screen relative bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-600">
       <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
         <div className="text-right mb-6 print:hidden">
@@ -61,6 +54,15 @@ const Index = () => {
             </p>
             <p>
               Я еще не умею говорить "папа", но скоро обязательно скажу! Это будет мое первое слово, обещаю!
+            </p>
+            <p>
+              Папочка, не знаю почему, но мама много плакала, я это чувствовал.
+            </p>
+            <p>
+              Но даже в такие моменты, она говорила, что гордится тобой! Я тоже тобой горжусь и хочу быть таким как ты!
+            </p>
+            <p>
+              Я вас с мамочкой очень сильно люблю!
             </p>
             <p>
               Спасибо тебе за то, что ты есть. За твои объятия, за твои песенки, за то, что подбрасываешь меня высоко-высоко, и я смеюсь от радости!
