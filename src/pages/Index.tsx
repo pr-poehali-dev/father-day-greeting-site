@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 const Index = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audio] = useState(() => new Audio('https://cdn.poehali.dev/files/tender-music.mp3'));
+  const [audio] = useState(() => new Audio('https://www.bensound.com/bensound-music/bensound-tenderness.mp3'));
 
   useEffect(() => {
     audio.loop = true;
