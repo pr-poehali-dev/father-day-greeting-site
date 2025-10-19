@@ -65,39 +65,6 @@ const Index = () => {
           </p>
         </Card>
 
-        <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-fade-in">
-          <div className="flex items-center gap-3 mb-6">
-            <Icon name="Gift" size={32} className="text-[#F97316]" />
-            <h2 className="text-3xl font-bold text-primary">Благодарность</h2>
-          </div>
-          <div className="space-y-4">
-            <div className="flex items-start gap-4">
-              <Icon name="Check" size={24} className="text-[#F97316] mt-1 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                <strong>За твою любовь</strong> — безусловную, искреннюю и вечную
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <Icon name="Check" size={24} className="text-[#F97316] mt-1 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                <strong>За твою поддержку</strong> — в каждой моей победе и поражении
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <Icon name="Check" size={24} className="text-[#F97316] mt-1 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                <strong>За твою мудрость</strong> — которая помогает мне расти каждый день
-              </p>
-            </div>
-            <div className="flex items-start gap-4">
-              <Icon name="Check" size={24} className="text-[#F97316] mt-1 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                <strong>За твой пример</strong> — как быть настоящим человеком
-              </p>
-            </div>
-          </div>
-        </Card>
-
         <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-scale-in">
           <div className="flex items-center gap-3 mb-6">
             <Icon name="Mail" size={32} className="text-[#F97316]" />
