@@ -42,6 +42,12 @@ const Index = () => {
           <p className="text-base leading-relaxed text-muted-foreground italic mt-4">
             Все это мама говорила мне, когда я был еще в ее животике.
           </p>
+          <p className="text-lg leading-relaxed text-foreground mt-6">
+            Не знаю, почему, но мама много плакала.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground mt-4">
+            Но всегда наши два с ней сердечка ♥️ бились сильнее и теплее, когда мы думали про тебя.
+          </p>
         </Card>
 
         <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-fade-in">
