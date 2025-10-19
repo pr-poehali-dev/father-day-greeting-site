@@ -14,10 +14,10 @@ const Index = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat print:hidden"
         style={{ 
           backgroundImage: 'url(https://cdn.poehali.dev/files/db139a82-fae5-4c68-9986-ba9f88505647.jpeg)',
-          opacity: 0.15
+          opacity: 0.4
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FEF7CD]/90 via-[#FDE1D3]/90 to-[#F2FCE2]/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FEF7CD]/70 via-[#FDE1D3]/70 to-[#F2FCE2]/70" />
       <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
         <div className="text-right mb-6 print:hidden">
