@@ -48,6 +48,12 @@ const Index = () => {
           <p className="text-lg leading-relaxed text-foreground mt-4">
             Но всегда наши два с ней сердечка ♥️ бились сильнее и теплее, когда мы думали про тебя.
           </p>
+          <p className="text-lg leading-relaxed text-foreground mt-6">
+            А когда ты меня гладил, я кувыркался в пузике от счастья, не осознавая, что толкаю нашу мамочку.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground mt-4">
+            Папа, я знаю тебя не 10 месяцев,
+          </p>
         </Card>
 
         <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-fade-in">
