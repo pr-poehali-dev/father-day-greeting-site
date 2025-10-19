@@ -11,11 +11,14 @@ const Index = () => {
           <div className="mb-6">
             <Icon name="Heart" size={64} className="mx-auto text-[#F97316] mb-4" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
-            С Днём отца!
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            Любимый наш муж и отец ❤️
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground">
-            Дорогой папа, это письмо для тебя
+          <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-4">
+            Любимый папочка! 💞
+          </h2>
+          <p className="text-xl md:text-2xl text-foreground font-medium">
+            Поздравляем тебя с Днем отца!
           </p>
         </section>
 
@@ -25,12 +28,19 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-primary">Поздравление</h2>
           </div>
           <p className="text-lg leading-relaxed text-foreground mb-4">
-            Папа, в этот особенный день хочу сказать тебе, как сильно я тебя люблю и ценю. 
-            Ты для меня не просто отец — ты мой герой, мой наставник, мой лучший друг.
+            Как здорово, что в нашей жизни появился еще один теплый праздник.
+          </p>
+          <p className="text-2xl leading-relaxed text-foreground mb-4 font-semibold text-center">
+            Мы тебя очень сильно любим!
+          </p>
+          <p className="text-xl leading-relaxed text-foreground mb-4 text-center">
+            Я - безмерно! А мама - безумно 😍
           </p>
           <p className="text-lg leading-relaxed text-foreground">
-            Каждый день рядом с тобой — это урок мудрости, доброты и силы духа. 
-            Спасибо за то, что ты есть в моей жизни!
+            Папочка, ты сильный, смелый, добрый, любящий, целеустремленный, заботливый, работящий, смешной, идейный!
+          </p>
+          <p className="text-base leading-relaxed text-muted-foreground italic mt-4">
+            Все это мама говорила мне, когда я был еще в ее животике.
           </p>
         </Card>
 
