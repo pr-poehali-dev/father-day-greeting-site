@@ -9,7 +9,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-600">
+    <div className="min-h-screen relative bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
       <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
         <div className="text-right mb-6 print:hidden">
@@ -21,17 +21,17 @@ const Index = () => {
         
         <section className="text-center mb-16 animate-fade-in">
           <div className="mb-6">
-            <Icon name="Heart" size={64} className="mx-auto text-white drop-shadow-lg mb-4" />
+            <Icon name="Heart" size={64} className="mx-auto text-[#F97316] drop-shadow-lg mb-4" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 drop-shadow-sm mb-4">
             Любимый папочка! 💞
           </h1>
-          <p className="text-xl md:text-2xl text-white drop-shadow-md font-medium">
+          <p className="text-xl md:text-2xl text-gray-700 drop-shadow-sm font-medium">
             Поздравляем тебя с Днем отца!
           </p>
         </section>
 
-        <div className="mb-12 p-8 md:p-12 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl animate-scale-in border border-white/30 print:bg-white print:border-gray-200">
+        <div className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl animate-scale-in border border-orange-200 print:bg-white print:border-gray-200">
           <div className="flex items-center gap-3 mb-6">
             <Icon name="Mail" size={32} className="text-[#F97316]" />
             <h2 className="text-3xl font-bold text-primary">Письмо</h2>
@@ -121,12 +121,12 @@ const Index = () => {
 
         <div className="text-center animate-scale-in">
           <div className="mb-6">
-            <Icon name="Heart" size={48} className="mx-auto text-white drop-shadow-lg" />
+            <Icon name="Heart" size={48} className="mx-auto text-[#F97316] drop-shadow-lg" />
           </div>
-          <p className="text-2xl font-bold text-white drop-shadow-lg mb-2">
+          <p className="text-2xl font-bold text-gray-800 drop-shadow-sm mb-2">
             С любовью и благодарностью
           </p>
-          <p className="text-lg text-white drop-shadow-md">
+          <p className="text-lg text-gray-700 drop-shadow-sm">
             Твоя семья
           </p>
         </div>
