@@ -2,17 +2,51 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audio] = useState(() => new Audio('https://cdn.poehali.dev/files/tender-music.mp3'));
+
+  useEffect(() => {
+    audio.loop = true;
+    audio.volume = 0.3;
+    return () => {
+      audio.pause();
+    };
+  }, [audio]);
+
+  const toggleMusic = () => {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   const handlePrint = () => {
     window.print();
   };
 
   return (
     <div className="min-h-screen relative bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-10 left-10 text-6xl">💕</div>
+        <div className="absolute top-32 right-20 text-5xl">⭐</div>
+        <div className="absolute bottom-20 left-32 text-5xl">🎈</div>
+        <div className="absolute bottom-40 right-16 text-6xl">💝</div>
+        <div className="absolute top-1/2 left-20 text-4xl">✨</div>
+        <div className="absolute top-1/3 right-32 text-5xl">🌟</div>
+      </div>
+      
       <div className="relative container mx-auto px-4 py-12 max-w-4xl">
         
-        <div className="text-right mb-6 print:hidden">
+        <div className="flex justify-between items-center mb-6 print:hidden">
+          <Button onClick={toggleMusic} className="bg-pink-500 hover:bg-pink-600">
+            <Icon name={isPlaying ? "Pause" : "Play"} size={20} className="mr-2" />
+            {isPlaying ? 'Пауза' : 'Включить музыку'}
+          </Button>
           <Button onClick={handlePrint} className="bg-[#F97316] hover:bg-[#EA6C0C]">
             <Icon name="Printer" size={20} className="mr-2" />
             Распечатать письмо
@@ -31,7 +65,16 @@ const Index = () => {
           </p>
         </section>
 
-        <div className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl animate-scale-in border border-orange-200 print:bg-white print:border-gray-200">
+        <div className="mb-12 p-8 md:p-12 bg-white/60 backdrop-blur-md rounded-3xl shadow-2xl animate-scale-in border-4 border-dashed border-pink-300 print:bg-white print:border-gray-200 relative">
+          <div className="absolute -top-4 -left-4 text-4xl">💕</div>
+          <div className="absolute -top-4 -right-4 text-4xl">💕</div>
+          <div className="absolute -bottom-4 -left-4 text-4xl">💕</div>
+          <div className="absolute -bottom-4 -right-4 text-4xl">💕</div>
+          <div className="absolute top-1/4 -left-3 text-3xl">⭐</div>
+          <div className="absolute top-1/4 -right-3 text-3xl">⭐</div>
+          <div className="absolute bottom-1/4 -left-3 text-3xl">✨</div>
+          <div className="absolute bottom-1/4 -right-3 text-3xl">✨</div>
+          
           <div className="flex items-center gap-3 mb-6">
             <Icon name="Mail" size={32} className="text-[#F97316]" />
             <h2 className="text-3xl font-bold text-primary">Письмо</h2>
@@ -58,6 +101,14 @@ const Index = () => {
             <p>
               Папа, когда я родился, ты взял меня на ручки, и я сразу понял — ты мой самый родной человек! Твои большие и сильные руки держали меня так бережно, как будто я самое дорогое на свете.
             </p>
+            
+            <div className="my-6 rounded-xl overflow-hidden shadow-lg border-2 border-pink-200">
+              <img 
+                src="https://cdn.poehali.dev/files/151f29f9-f26a-4bcb-88fd-ff363eca2967.jpeg" 
+                alt="Первая встреча с папой" 
+                className="w-full h-auto"
+              />
+            </div>
             <p>
               Сейчас мне 10 месяцев, и каждый день я вижу, как ты заботишься о нас с мамой. Когда ты приходишь с работы уставший, но все равно играешь со мной — это самое счастливое время!
             </p>
