@@ -52,7 +52,13 @@ const Index = () => {
             А когда ты меня гладил, я кувыркался в пузике от счастья, не осознавая, что толкаю нашу мамочку.
           </p>
           <p className="text-lg leading-relaxed text-foreground mt-4">
-            Папа, я знаю тебя не 10 месяцев,
+            Папа, я знаю тебя не 10 месяцев, я знаю тебя 17 месяцев!
+          </p>
+          <p className="text-lg leading-relaxed text-foreground mt-4">
+            И каждый из дней, я слышал, что мама гордится тобой!
+          </p>
+          <p className="text-xl leading-relaxed text-foreground mt-6 font-semibold">
+            Папа, я тоже горжусь тобой,
           </p>
         </Card>
 
