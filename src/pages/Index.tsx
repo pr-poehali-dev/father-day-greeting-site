@@ -60,6 +60,12 @@ const Index = () => {
           <p className="text-xl leading-relaxed text-foreground mt-6 font-semibold">
             Папа, я тоже горжусь тобой,
           </p>
+          <p className="text-lg leading-relaxed text-foreground mt-4">
+            Папочка, я горжусь что ты выбрал меня.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground mt-2">
+            Что вы с мамочкой выбрали меня.
+          </p>
         </Card>
 
         <Card className="mb-12 p-8 md:p-12 bg-white/80 backdrop-blur-sm shadow-xl animate-fade-in">
